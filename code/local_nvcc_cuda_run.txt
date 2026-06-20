@@ -1,0 +1,71 @@
+[SVD_GPU_PROFILE] h2d_ms=3825.486 d2h_ms=3097.562 kernel_sync_ms=431.515 h2d_MB=30479.484 d2h_MB=30471.852 left_calls=1026 right_calls=1019
+=== 固定值 5x5 ===
+  converged                 : yes
+  ||A-U*S*V^T||_F           : 3.87069e-12
+  relative recon error      : 2.76668e-13
+  ||U^T U-I||_F             : 1.63847e-15
+  ||V^T V-I||_F             : 1.44025e-15
+  diagonal structure error  : 0
+  descending order error    : 0
+  nonnegative diagonal      : yes
+  time bidiagonalization(ms): 397.509
+  time gkh iteration(ms)    : 1.0083
+  结果: PASS
+
+=== 随机 8x8 ===
+  converged                 : yes
+  ||A-U*S*V^T||_F           : 2.45007e-14
+  relative recon error      : 1.7107e-15
+  ||U^T U-I||_F             : 2.91351e-15
+  ||V^T V-I||_F             : 1.69011e-15
+  diagonal structure error  : 0
+  descending order error    : 0
+  nonnegative diagonal      : yes
+  time bidiagonalization(ms): 5.602
+  time gkh iteration(ms)    : 1.1016
+  结果: PASS
+
+=== 近秩亏损 10x8 ===
+  converged                 : yes
+  ||A-U*S*V^T||_F           : 4.0478e-14
+  relative recon error      : 3.61797e-15
+  ||U^T U-I||_F             : 2.91393e-15
+  ||V^T V-I||_F             : 1.6795e-15
+  diagonal structure error  : 0
+  descending order error    : 0
+  nonnegative diagonal      : yes
+  time bidiagonalization(ms): 6.1003
+  time gkh iteration(ms)    : 0.8735
+  结果: PASS
+
+=== 随机 10x8 ===
+  converged                 : yes
+  ||A-U*S*V^T||_F           : 1.08529e-11
+  relative recon error      : 4.79536e-13
+  ||U^T U-I||_F             : 2.62458e-15
+  ||V^T V-I||_F             : 2.54657e-15
+  diagonal structure error  : 0
+  descending order error    : 0
+  nonnegative diagonal      : yes
+  time bidiagonalization(ms): 5.6015
+  time gkh iteration(ms)    : 0.8996
+  结果: PASS
+
+=== 随机 1000x1000 ===
+  converged                 : yes
+  ||A-U*S*V^T||_F           : 1.89001e-10
+  relative recon error      : 3.26838e-13
+  ||U^T U-I||_F             : 2.3258e-13
+  ||V^T V-I||_F             : 2.35634e-13
+  diagonal structure error  : 0
+  descending order error    : 0
+  nonnegative diagonal      : yes
+  time bidiagonalization(ms): 17315.3
+  time gkh iteration(ms)    : 5983.64
+  结果: PASS
+
+==============================
+随机种子基值: 2412592
+总上二对角化耗时(ms): 17730.1
+总GKH迭代耗时(ms): 5987.52
+通过: 5 / 5

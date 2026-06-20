@@ -1,0 +1,32 @@
+﻿Elapsed Time: 10.019s
+    CPU Time: 9.455s
+        Effective Time: 9.387s
+        Spin Time: 0.068s
+        Overhead Time: 0s
+    Total Thread Count: 76
+    Paused Time: 0s
+
+Top Hotspots
+Function          Module          CPU Time  % of CPU Time(%)
+----------------  --------------  --------  ----------------
+func@0x403570     main_local.exe    3.539s             37.4%
+[main_local.exe]  main_local.exe    1.626s             17.2%
+func@0x4021a0     main_local.exe    1.610s             17.0%
+func@0x402100     main_local.exe    1.004s             10.6%
+func@0x403610     main_local.exe    0.921s              9.7%
+[Others]          N/A               0.755s              8.0%
+Collection and Platform Info
+    Application Command Line: .\main_local.exe "2412592" 
+    Operating System: Microsoft Windows 11
+    Computer Name: pointzu
+    Result Size: 4.3 MB 
+    Collection start time: 05:33:31 20/06/2026 UTC
+    Collection stop time: 05:33:41 20/06/2026 UTC
+    Collector Type: User-mode sampling and tracing
+    CPU
+        Name: Unknown
+        Frequency: 3.793 GHz
+        Logical CPU Count: 16
+        Cache Allocation Technology
+            Level 2 capability: not detected
+            Level 3 capability: available

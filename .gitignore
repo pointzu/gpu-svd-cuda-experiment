@@ -1,0 +1,41 @@
+# Build artifacts
+*.exe
+*.obj
+*.o
+*.e
+*.out
+*.data
+*.data.old
+main
+!code/test_O2_4cores.o
+
+# LaTeX intermediate files
+*.aux
+*.log
+*.out
+*.toc
+*.xdv
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+!code/local_nvcc_build.log
+
+# Keep the final report, ignore iterative build copies
+AMDHIP/latex_report/main_*.pdf
+AMDHIP/latex_report/tmp/
+AMDHIP/latex_report/mpl_cache/
+
+# Profiling raw databases and traces
+**/vtune_hotspots_local/
+**/vtune_svd_hotspots/
+**/sqlite-db/
+**/data.0/
+*.vtune
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
